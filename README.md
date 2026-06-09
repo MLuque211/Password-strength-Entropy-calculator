@@ -57,8 +57,8 @@ A diceware phrase consisting of **5 or more words** establishes severe mathemati
 ## Resources, Attributions & Copyright
 The original English wordlist structure and the diceware method provide the foundational framework for this implementation:
 * **Author:** Arnold G. Reinhold (Cambridge, Massachusetts, USA).
-* **Source:** [The official website diceware][site-url]
-* **Official Wordlist Asset:** [Diceware dice indexed word list (PDF)][pdf-url]
+* **Source:** [The official website diceware](https://theworld.com/~reinhold/diceware.html)
+* **Official Wordlist Asset:** [Diceware dice indexed word list (PDF)](https://theworld.com/%7Ereinhold/dicewarewordlist.pdf)
 * **Copyright:** Copyright © 1995-2026 by Arnold G. Reinhold. All rights reserved.
 * **License:** Distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
 * **Warranty disclaimer:** This information is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -80,11 +80,6 @@ During development and extensive testing, a few technical challenges and enginee
 8. **Edge-case structural validation:** Extensive debugging exposed major logical bugs when handling single-word boundaries ($N=1$). This required refactoring the core random injection loops to introduce structural shields, ensuring the program handles extreme data inputs gracefully without dropping runtime errors.
 9. **Cross-platform UX/UI terminal compatibility**: Optimizing the visual interface required an architecture that guarantees native portability without external dependencies. By embedding an integrated, lightweight ANSI escape code palette (`CYAN`, `GREEN`, `YELLOW`, `RED`, `MAGENTA`, `WHITE`, `GRAY`) alongside an automated Windows runtime initialization trigger `if os.name == "nt": os.system("")`, the application delivers consistent styling and risk thermometer rendering across UNIX and Windows systems out of the box.
 10. **The educational milestone (beginner's perspective)**: Beyond the mathematical modeling and technical adjustments, the entire development lifecycle served as an incredibly rewarding educational milestone. For someone newly entering the software engineering space, building a fully functional, multi-modular cybersecurity calculator from scratch proved to be immensely engaging, challenging, and above all, fun.
-
----
-## Links
-[site-url]: https://theworld.com/~reinhold/diceware.html
-[pdf-url]: https://theworld.com/%7Ereinhold/dicewarewordlist.pdf
 
 ---
 *Created as a Final Project for Code in Place 2026.*
