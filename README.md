@@ -31,10 +31,12 @@ To prevent classic over optimistic time predictions often found in academic exam
 * **Factor Applied:** `PREDICTABLE_REDUCTION = 10,000`
 * **Context:** Human password generation is highly non-random. Users inherently lean into predictable heuristics (capitalizing the first character, appending sequence numbers like `123`, or utilizing basic character substitution like *l33tspeak*). Intelligent mask and rule-based dictionary attacks bypass trillions of absurd character combinations, maximizing efficiency over unoptimized brute force.
 
-> [!NOTE] Critical Disclaimer on Constraints:
+> [!NOTE]
+> Critical Disclaimer on Constraints:
 > This tool scales constraints based on character pool distribution. If a 30-character password contains *exclusively* numbers, the raw mathematical space outputs a high "strong" indicator based on character count. However, if a threat actor targets the system specifically utilizing a numeric only library, the actual time to crack would drop immediately to zero. The underlying mathematics inherently differ depending on the explicit generation model used.
 
->[!CAUTION] In short:
+>[!CAUTION]
+>In short:
 >The security of a password never depends solely on its length, but on how unpredictable it is (its entropy) to an attacker. If the attacker discovers the ‘pattern’ (only numbers or sequential patterns or basic dictionary words, for example), the advantage of the length is lost.
 
 ---
@@ -47,7 +49,8 @@ Where every randomized word injected introduces exactly **12.92 bits** of pure c
 
 A diceware phrase consisting of **5 or more words** establishes severe mathematical resistance even against industrial grade high velocity hacker farms, proving the core cybersecurity paradigm:
 
->[!NOTE] High security, low cognitive load
+>[!NOTE]
+>High security, low cognitive load:
 >Extremely difficult for an automated machine to brute force, yet incredibly natural for a human mind to retain.
 
 ---
