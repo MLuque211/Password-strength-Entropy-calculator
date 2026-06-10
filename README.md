@@ -1,3 +1,4 @@
+![Add cover image](Images/Thumbnail_proyect_code_in_place_2026.jpg)
 # Password Strength & Entropy Calculator
 
 This project was developed as the final graduation project for Stanford's **Code in Place 2026**. It is an cybersecurity CLI tool designed to calculate the mathematical entropy of passwords/passphrases and estimate the real world time it would take to crack them using different tiers of computing hardware.
@@ -82,4 +83,4 @@ During development and extensive testing, a few technical challenges and enginee
 10. **The educational milestone (beginner's perspective)**: Beyond the mathematical modeling and technical adjustments, the entire development lifecycle served as an incredibly rewarding educational milestone. For someone newly entering the software engineering space, building a fully functional, multi-modular cybersecurity calculator from scratch proved to be immensely engaging, challenging, and above all, fun.
 
 ---
-*Created as a Final Project for Code in Place 2026.*
+*Created as a Final Project for Code in Place 2026*
